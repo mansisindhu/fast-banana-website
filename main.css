@@ -576,3 +576,64 @@ form {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/*###################number#####################*/
+
+.number {
+  text-align: center;
+  background: #191919;
+  padding: 40px 0;
+  color: #eddea4;
+  transition: background 2s ease, color 2s ease;
+}
+
+.number:hover {
+  background: rgb(109, 106, 79);
+  color: #ffc914;
+}
+
+.number .fa {
+  font-size: 60px;
+}
+
+.numscroller {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.number h3 {
+  text-transform: uppercase;
+}
+
+/*
+@media screen and (min-width:576px) {
+  #numbers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .number {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:992px) {
+
+  .number {
+    flex: 0 0 25%;
+  }
+}
+*/
+
+@media screen and (min-width: 576px) {
+  #numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #numbers {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
