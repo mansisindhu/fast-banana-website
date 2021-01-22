@@ -398,3 +398,63 @@ form {
   display: flex;
   flex-wrap: wrap;
 }
+/*#########################work#########################*/
+
+#work .title {
+  flex-direction: row-reverse;
+  margin-top: -20px;
+}
+
+#work .title-icon .fa {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+#work .title-text {
+  padding-left: 0;
+  padding-right: 10px;
+  border-right: 3px solid #b5c2b7;
+  border-left: none;
+}
+
+.work-center {
+  padding: 40px 0;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#work img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #ffc914;
+}
+
+.button-group {
+  padding: 0 0 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-group button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 25px;
+  margin: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #f5f3f5;
+  background: #00a7e1;
+}
+
+.picture-item {
+  width: calc(50% - 20px);
+  margin: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .picture-item {
+    width: calc(25% - 20px);
+  }
+}
