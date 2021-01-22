@@ -458,3 +458,68 @@ form {
     width: calc(25% - 20px);
   }
 }
+
+/*##########about###########################*/
+
+#about {
+  min-height: 90vh;
+  padding: 40px 0;
+  background: linear-gradient(rgba(255, 201, 20, 0.3), rgba(255, 201, 20, 0.3)),
+    url(images/current-projects-1.jpeg) center/cover no-repeat fixed;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+}
+
+#about-center {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+#about-photo img {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 2s ease;
+}
+
+#about-photo img:hover {
+  transform: scale(0.8);
+}
+
+#about-photo,
+#about-text {
+  margin: 40px 0;
+}
+
+.ui-accordion-header {
+  padding: 20px !important;
+  text-align: center;
+  background: #ffc914 !important;
+  color: #00a7e1 !important;
+  text-transform: capitalize;
+  font-size: 20px !important;
+  margin: 5px 0 !important;
+  border: 2px solid #00a7e1 !important;
+  border-radius: 10px !important;
+}
+
+.ui-accordion .ui-accordion-content {
+  background: #b5c2b7;
+  padding: 20px !important;
+  line-height: 1.8;
+  color: #f5f3f5;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 776px) {
+  #about-center {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  #about-text,
+  #about-photo {
+    flex: 0 0 calc(50% - 1em);
+  }
+  #about-text {
+    align-self: center;
+  }
+}
