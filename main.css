@@ -523,3 +523,56 @@ form {
     align-self: center;
   }
 }
+/*#################current##########################*/
+
+#current .title {
+  margin: 40px 0;
+}
+
+.current-item {
+  background: linear-gradient(rgb(255, 201, 20), rgb(255, 201, 20));
+}
+
+.current-item img {
+  display: block;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
+.current-item img:hover {
+  opacity: 0.5;
+}
+
+/*
+@media screen and (min-width:576px) {
+  #current-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .current-item {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:992px) {
+
+  .current-item {
+    flex: 0 0 25%;
+  }
+}
+*/
+
+@media screen and (min-width: 576px) {
+  #current-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #current-center {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
