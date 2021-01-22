@@ -890,3 +890,39 @@ form {
     flex: 0 0 calc(33.3% - 10px);
   }
 }
+/*####################quotes#################*/
+
+#quotes {
+  padding: 40px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/quotes-background.jpeg) center/cover fixed no-repeat;
+}
+
+#quotes .title-heading {
+  color: #ffc914;
+}
+
+.quote {
+  text-align: center;
+  color: #f5f3f5;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.quote img {
+  width: 150px !important;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.quote .fa {
+  font-size: 35px;
+  margin-right: 5px;
+  color: #ffc914;
+}
+
+.quote p {
+  line-height: 1.5;
+  width: 80%;
+  margin: 10px auto;
+}
